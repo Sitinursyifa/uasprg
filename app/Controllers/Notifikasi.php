@@ -31,7 +31,7 @@ class Notifikasi extends Controller
 
     public function dosenMasuk($dosen_id)
     {
-        return $this->kirimPesanDosen($dosen_id, "masuk");
+        return $this->kirimPesanDosen($dosen_id, "masuk kuliah");
     }
 
     private function kirimPesanDosen($dosen_id, $status)
@@ -43,7 +43,7 @@ class Notifikasi extends Controller
             return view('notifikasi_view', ['message' => 'Dosen tidak ditemukan.']);
         }
 
-        $message = "Perhatian: Dosen Pak " . $dosen['nama_dosen'] . " " . $status . " hari ini.";
+        $message = "Perhatian: Dosen Bapak " . $dosen['nama_dosen'] . " " . $status . " hari ini";
         $this->kirimNotifikasi($message);
 
         return view('notifikasi_view', ['message' => 'Notifikasi telah dikirim.']);

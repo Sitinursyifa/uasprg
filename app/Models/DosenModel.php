@@ -8,7 +8,7 @@ class DosenModel extends Model
 {
     protected $table = 'dosen';
     protected $primaryKey = 'id_dosen';
-    protected $allowedFields = ['kode_dosen', 'nama_dosen', 'nama_matkul'];
+    protected $allowedFields = ['kode_dosen', 'nama_dosen','kode_matkul', 'nama_matkul'];
 
     public function getDosen($id = null)
     {

@@ -27,6 +27,7 @@ class Dosen extends Controller
         $data = [
             'kode_dosen' => $this->request->getPost('kode_dosen'),
             'nama_dosen' => $this->request->getPost('nama_dosen'),
+            'kode_matkul' => $this->request->getPost('kode_matkul'),
             'nama_matkul' => $this->request->getPost('nama_matkul'),
         ];
 
