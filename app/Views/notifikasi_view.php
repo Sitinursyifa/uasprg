@@ -8,10 +8,44 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f5f5f5; /* Light gray background */
+        }
+        .card {
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff; /* Primary blue */
+            color: white;
+            border-bottom: none;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .card-body {
+            background-color: #ffffff; /* White background */
+        }
+        .alert-info {
+            background-color: #e7f0fa; /* Light blue */
+            color: #007bff; /* Primary blue text */
+            border-color: #d0e3f0; /* Lighter blue border */
+        }
+        .btn-primary {
+            background-color: #007bff; /* Primary blue */
+            border-color: #007bff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            border-color: #0056b3;
+        }
+    </style>
 </head>
-<body class="bg-dark text-light">
+<body>
     <div class="container mt-5">
-        <div class="card bg-secondary text-light">
+        <div class="card">
             <div class="card-header">
                 <h3><i class="fas fa-bell"></i> Notifikasi</h3>
             </div>
